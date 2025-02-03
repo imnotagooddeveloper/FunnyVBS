@@ -1,8 +1,7 @@
 @echo off
-set "sourceFile=%~dp0a.vbs"
-set "destinationFolder=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+set "TheFileIWantCopy=%~dp0a.vbs"
+set "StartupFolduur=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 
-copy "%sourceFile%" "%destinationFolder%"
+copy "%TheFileIWantCopy%" "%StartupFolduur%"
 
-echo File copied to startup folder.
 pause
