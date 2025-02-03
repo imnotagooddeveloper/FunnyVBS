@@ -1,5 +1,5 @@
 Just a text file? why would i want?
-Sİr listen.
+Sir listen.
 this unicode character forces chars right to left
 For example: lets say this char is ! and your file is notmalware.exe
 you place ! notmalw!are.exe and it turnst this file into notmalwexe.rea
