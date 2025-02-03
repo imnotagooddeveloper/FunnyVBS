@@ -1,2 +1,2 @@
 # FunnyVBS
-I'll dumb every vbs i do here.
+I'll dump every vbs i have here.
